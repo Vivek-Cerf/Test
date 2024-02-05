@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeTest;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -53,9 +54,12 @@ public class NewTest {
 	  pencilButton.click();
 	  
 	  WebElement nameTxtbox = driver.findElement(By.xpath("//*[@id=\"name\"]"));
-	  //  Thread.sleep(50);
-	  nameTxtbox.clear();
-	  nameTxtbox.clear();
+	  
+	  //nameTxtbox.clear();
+	  // Thread.sleep(5000);
+	 // nameTxtbox.sendKeys("t1");
+	  
+	  nameTxtbox.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 	  nameTxtbox.sendKeys("Vivek Malkotia");
 	  
 	  
