@@ -55,24 +55,21 @@ public class NewTest {
 	  
 	  WebElement nameTxtbox = driver.findElement(By.xpath("//*[@id=\"name\"]"));
 	  
-	  //nameTxtbox.clear();
-	  // Thread.sleep(5000);
-	 // nameTxtbox.sendKeys("t1");
-	  
 	  nameTxtbox.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
-	  nameTxtbox.sendKeys("Vivek Malkotia");
+	  nameTxtbox.sendKeys("Vivek M");
 	  
 	  
 	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	 wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[6]/div[9]/div[2]/div/form/div[7]/div/button"))).click();
+	 System.out.println("Updated--------------------------");
 	 
   }
   
 
   @AfterTest
   public void afterTest() {
-	driver.close();
-	driver.quit();
+	//driver.close();
+	//driver.quit();
   }
 
 }
