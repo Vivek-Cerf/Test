@@ -56,7 +56,7 @@ public class NewTest {
 	  WebElement nameTxtbox = driver.findElement(By.xpath("//*[@id=\"name\"]"));
 	  
 	  nameTxtbox.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
-	  nameTxtbox.sendKeys("Vivek M");
+	  nameTxtbox.sendKeys("Vivek Malkotia");
 	  
 	  
 	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
