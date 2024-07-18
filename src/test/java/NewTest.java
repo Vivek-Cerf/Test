@@ -37,7 +37,7 @@ public class NewTest {
   public void f() throws InterruptedException {
 	  
 	  WebElement userName = driver.findElement(By.xpath("//*[@id=\"usernameField\"]"));
-	  userName.sendKeys("");
+	  userName.sendKeys("a");
 	  
 	  WebElement password = driver.findElement(By.xpath("//*[@id=\"passwordField\"]"));
 	  password.sendKeys("");
